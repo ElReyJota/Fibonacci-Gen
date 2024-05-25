@@ -68,6 +68,7 @@ fn main(){
         println!("Please, specify which sequence would you like:");
         println!("1. Fibonacci Sequence");
         println!("2. Lucas Sequence");
+        input.clear();
         std::io::stdin().read_line(&mut input).unwrap();
         
         // Trims and transforms the input
@@ -90,6 +91,7 @@ fn main(){
     while stop == false {
         let mut limit_line = String::new();
         println!("Please, specify the limit for the sequence:");
+        limit_line.clear();
         std::io::stdin().read_line(&mut limit_line).unwrap();
         
         // Trims the limit line and reassings it.
